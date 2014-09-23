@@ -1,0 +1,42 @@
+@-moz-viewport { width:device-width; scale: 1;}
+@-ms-viewport { width:device-width; scale: 1;}
+@-o-viewport { width:device-width; scale: 1;}
+@-webkit-viewport { width:device-width; scale: 1;}
+@viewport { width:device-width; scale: 1;}
+
+/* You need to have a view port in css as well to make sure that MOST all websites and search engines, you need to specify in each one differently */
+
+html {
+    box-sizing: border-box;
+}
+
+/*this is really imoortant for the css box model.... YOU NEED TO DO THIS! it changes where width is. if the width is 100pixels, you dont have to worry about doing math between the padding and the width */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.title {
+    color:red;
+}
+
+@media only screen and (min-width: 25em ) {
+ /*the most important par is the min-width! That means that it is 400px, when it hits 400pixels, then the media querie is activated */
+    
+/* TRY NOT TO do pixels!!!! never make something for a specific device!! we wanna use EMs!!! make it work for EVERYONE*/
+    .title {
+        color:blue;
+        font-size: 10rem;
+    }
+
+} /* always make sure there are two closing brackets at the end */
+
+/*IF YOU DO THE ABOVE ONE IN 10REM, THE ONE BELOW IS GOING TO BE 10REM AS WELL */
+
+@media only screen and (min-width: 45em) {
+    .title {
+        color: green;
+    }
+}
+
+/*the different amount of pixels dictates what the style on the page is going to be due to the media queries!!!! */
