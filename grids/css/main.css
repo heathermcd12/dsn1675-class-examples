@@ -21,20 +21,8 @@ img {
     display:block;
 }
 
-.grid {
-    background-color:red;
-}
-.unit     {
-    background-color:green;
-    float: left;
-    width: 33.333%
-}
+
 h2 {
     margin:0;
 }
 
-.gutter {
-    padding-left: 1em;
-    padding-right:1em;
-}
-    
